@@ -1,0 +1,12 @@
+# Large files (>100MB exceeds GitHub's limit)
+*.docx
+*.zip
+
+# Temporary / Log files
+debug.log
+aviation_page.html
+
+# OS and Editor
+.DS_Store
+Thumbs.db
+.vscode/
