@@ -18417,3 +18417,268 @@ body.sticky-cta-hidden .back-to-top {
     justify-content: center !important;
   }
 }
+
+/* ==========================================================================
+   Aviation Labs & World-Class Infrastructure Showcase (dept-labshow)
+   ========================================================================== */
+.dept-labshow {
+  position: relative;
+  background: #fbfbfd;
+  padding-block: clamp(60px, 6vw, 100px);
+  overflow: hidden;
+  border-top: 1px solid #edf2f7;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.dept-labshow__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: clamp(28px, 3.5vw, 44px);
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.dept-labshow__head-copy {
+  max-width: 760px;
+}
+
+.dept-labshow__kicker {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--red, #d92d3e);
+  margin-bottom: 8px;
+}
+
+.dept-labshow__head h2 {
+  font: 400 clamp(32px, 3.8vw, 56px)/1.15 Anton, sans-serif;
+  text-transform: uppercase;
+  color: var(--ink, #1a1a1a);
+  margin: 0 0 12px;
+  letter-spacing: 0.02em;
+}
+
+.dept-labshow__head h2 span {
+  color: var(--red, #d92d3e);
+}
+
+.dept-labshow__lede {
+  font-size: clamp(15px, 1.15vw, 17px);
+  line-height: 1.6;
+  color: #555555;
+  margin: 0;
+}
+
+.dept-labshow__nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.dept-labshow__nav button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.5px solid #dcdcdc;
+  background: #ffffff;
+  color: var(--ink, #1a1a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dept-labshow__nav button:hover {
+  background: var(--red, #d92d3e);
+  border-color: var(--red, #d92d3e);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(217, 45, 62, 0.28);
+}
+
+.dept-labshow__nav button:active {
+  transform: translateY(0);
+}
+
+.dept-labshow__carousel {
+  position: relative;
+}
+
+.dept-labshow__slide--detail {
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #e5e9ee;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 992px) {
+  .dept-labshow__slide--detail {
+    flex-direction: row;
+    min-height: 520px;
+  }
+  .dept-labshow__media {
+    width: 58%;
+    flex: 0 0 58%;
+    min-height: 520px;
+  }
+  .dept-labshow__panel {
+    width: 42%;
+    flex: 0 0 42%;
+    padding: clamp(32px, 3.5vw, 50px);
+  }
+}
+
+@media (max-width: 991px) {
+  .dept-labshow__slide--detail {
+    flex-direction: column;
+    border-radius: 18px;
+  }
+  .dept-labshow__media {
+    width: 100%;
+    height: 340px;
+  }
+  .dept-labshow__panel {
+    width: 100%;
+    padding: 26px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dept-labshow__media {
+    height: 250px;
+  }
+}
+
+.dept-labshow__media {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  background: #111111;
+}
+
+.dept-labshow__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.dept-labshow__slide--detail:hover .dept-labshow__media img {
+  transform: scale(1.03);
+}
+
+.dept-labshow__panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+.dept-labshow__panel-kicker {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--red, #d92d3e);
+  margin-bottom: 8px;
+}
+
+.dept-labshow__panel h3 {
+  font: 400 clamp(24px, 2.3vw, 34px)/1.2 Anton, sans-serif;
+  letter-spacing: 0.02em;
+  color: var(--ink, #1a1a1a);
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+.dept-labshow__panel > div > p {
+  font-size: clamp(14px, 1.05vw, 16px);
+  line-height: 1.6;
+  color: #555555;
+  margin: 0 0 18px;
+}
+
+.dept-labshow__readmore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(217, 45, 62, 0.25);
+  background: rgba(217, 45, 62, 0.05);
+  color: var(--red, #d92d3e);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-bottom: 16px;
+}
+
+.dept-labshow__readmore i {
+  font-size: 11px;
+  transition: transform 0.25s ease;
+}
+
+.dept-labshow__readmore[aria-expanded="true"] i {
+  transform: rotate(180deg);
+}
+
+.dept-labshow__readmore:hover {
+  background: var(--red, #d92d3e);
+  color: #ffffff;
+  border-color: var(--red, #d92d3e);
+}
+
+.dept-labshow__more {
+  border-top: 1px dashed #e2e8f0;
+  padding-top: 16px;
+  margin-bottom: 20px;
+  animation: labFadeIn 0.3s ease;
+}
+
+@keyframes labFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dept-labshow__more h4 {
+  font-size: 12.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink, #1a1a1a);
+  margin: 0 0 4px;
+}
+
+.dept-labshow__more p {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #666666;
+  margin: 0 0 12px;
+}
+
+.dept-labshow__more p:last-child {
+  margin-bottom: 0;
+}
+
+.dept-labshow__panel-count {
+  font-family: Anton, sans-serif;
+  font-size: clamp(14px, 1.2vw, 17px);
+  letter-spacing: 0.1em;
+  color: #a0aec0;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #f0f3f6;
+  text-align: right;
+  display: block;
+}
